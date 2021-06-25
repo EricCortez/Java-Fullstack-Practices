@@ -7,6 +7,7 @@ public class PlazaSania {
 
      public static void main(String[] args) {
 
+         Scanner input = new Scanner(System.in);
          Product product1=new Product(1,"leche","lacteos",10,15.5);
          Product product2=new Product(31,"fish","seafood",5,19.99);
          Product product3=new Product(2,"bread","Bread",100,1.99);
@@ -16,11 +17,10 @@ public class PlazaSania {
          Store tienda3=new Store(3,"Pan","thrd");
       //  tienda1.addProduct(product1);
 
-         String op="n";
+    String op="y";
 do {
 
 
-         Scanner input = new Scanner(System.in);
          System.out.println("What are you looking for?  1 "+ tienda1.getName()+
                  "2 "+tienda2.getName() +"3  "+tienda3.getName() );
 
@@ -66,6 +66,7 @@ do {
     System.out.println("you want to run again the program? no (n)/yes(y)");
     op=input.next();
 
-} while (op!="y");
+} while (op.equals("y"));
+
     }
 }
