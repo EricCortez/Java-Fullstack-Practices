@@ -1,1 +1,1 @@
-# Java-Fullstak-Practices
+# Java-Fullstack-Practices
